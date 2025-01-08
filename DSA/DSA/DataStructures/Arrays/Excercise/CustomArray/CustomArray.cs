@@ -53,4 +53,62 @@ public class CustomArray
 
         _size++;
     }
+
+    public int IndexOf(int element)
+    {
+        const int defaultValue = -1;
+
+        for (int i = 0; i < _size; i++)
+        {
+            if (_items[i] == element)
+            {
+                return i;
+            }
+        }
+
+        return defaultValue;
+    }
+
+
+    public void RemoveAt(int index)
+    {
+        /*
+         * Check if the input index is valid
+         * Input index must be > 0 < size - 1
+         */
+
+        if (index < 0 || index > _size - 1)
+        {
+            throw new Exception("Invalid index!");
+        }
+        
+        /*
+         * Swap values
+         */
+
+        for (int i = index; i < _size - 1; i++)
+        {
+            _items[i] = _items[i + 1];
+        }
+
+        _size--;
+    }
+
+
+    public int Count()
+    {
+        return _size;
+    }
+
+    /*
+     * Yes I know the print method is not meant to be here according to Software Design Principles
+     * But spare me my lord. Just for the sake of practise. 
+     */
+    public int Print()
+    {
+        foreach (int item in _items)
+        {
+            Console.WriteLine(item);
+        }
+    }
 }
