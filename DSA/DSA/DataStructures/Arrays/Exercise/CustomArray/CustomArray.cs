@@ -32,7 +32,7 @@ public class CustomArray
     public CustomArray()
     {
         _size = 0;
-        _items = [5];
+        _items = new int[5];
         _capacity = 5;
     }
     
@@ -44,9 +44,18 @@ public class CustomArray
          * Check if size of the array is more than the capacity
          */
 
-        if (_size >= _capacity)
+        if (_size > _capacity)
         {
             _capacity *= 2;
+
+            int[] newArray = new int[_capacity];
+
+            for (int i = 0; i < _size - 1; i++)
+            {
+                newArray[i] = _items[i];
+            }
+
+            _items = newArray;
         }
 
         _items[_size] = value;

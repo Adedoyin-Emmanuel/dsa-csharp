@@ -7,8 +7,19 @@ public class CustomArrayTest
     [SetUp]
     public void SetUp()
     {
-        _array = new DSA.DataStructures.Arrays.Exercise.CustomArray.CustomArray();
+       _array = new DSA.DataStructures.Arrays.Exercise.CustomArray.CustomArray();
     }
- 
+
+
+    [Test]
+    public void CountShouldReturnCorrectValueAferAddingElements()
+    {
+        
+        _array.Insert(1);
+        _array.Insert(2);
+        _array.Insert(3);
+
+        Assert.That(_array.Count(), Is.EqualTo(3));
+    }
     
 }
