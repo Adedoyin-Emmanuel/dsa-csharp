@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="DSA\Algorithms\" />
+      <Folder Include="DSA\DataStructures\" />
+    </ItemGroup>
+
 </Project>
