@@ -1,4 +1,4 @@
-namespace DSA.DSA.DataStructures.Arrays.Excercise.CustomArray;
+namespace DSA.DSA.DataStructures.Arrays.Exercise.CustomArray;
 
 /*
  * You might see a lot of comment here and think the code was written by AI
@@ -104,7 +104,7 @@ public class CustomArray
      * Yes I know the print method is not meant to be here according to Software Design Principles
      * But spare me my lord. Just for the sake of practise. 
      */
-    public int Print()
+    public void Print()
     {
         foreach (int item in _items)
         {
