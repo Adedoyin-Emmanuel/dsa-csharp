@@ -63,4 +63,16 @@ public class CustomArrayTest
          */
         Assert.That(_array.Count(), Is.EqualTo(2));
     }
+
+    [Test]
+    public void MaxShouldReturnHighestNumberInTheArray()
+    {
+        _array.Insert(4);
+        _array.Insert(100);
+        _array.Insert(45);
+        _array.Insert(23);
+        
+        
+        Assert.That(_array.Max(), Is.EqualTo(100));
+    }
 }
