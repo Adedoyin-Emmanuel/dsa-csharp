@@ -119,6 +119,24 @@ public class CustomArray
         return highestNumber;
     }
 
+    public CustomArray Intersect(int[] array)
+    {
+        var commonItems = new CustomArray();
+
+        for (int i = 0; i < _size; i++)
+        {
+            for (int j = 0; j < array.Count(); j++)
+            {
+                if (_items[i] == array[j])
+                {
+                    commonItems.Insert(_items[i]);
+                }
+            }
+        }
+
+        return commonItems;
+    }
+
 
     public int Count()
     {
