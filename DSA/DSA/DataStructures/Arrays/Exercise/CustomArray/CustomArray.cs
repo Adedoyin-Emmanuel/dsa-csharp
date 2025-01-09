@@ -50,7 +50,7 @@ public class CustomArray
 
             int[] newArray = new int[_capacity];
 
-            for (int i = 0; i < _size - 1; i++)
+            for (int i = 0; i < _size; i++)
             {
                 newArray[i] = _items[i];
             }
@@ -142,7 +142,7 @@ public class CustomArray
     {
         var reversedArray = new CustomArray();
 
-        for (int i = _size - 1; i <= 0; i--)
+        for (int i = _size - 1; i >= 0; i--)
         {
             reversedArray.Insert(_items[i]);
         }

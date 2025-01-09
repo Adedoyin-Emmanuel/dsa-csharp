@@ -100,4 +100,29 @@ public class CustomArrayTest
             Assert.That(result.IndexOf(2030), Is.EqualTo(2));
         });
     }
+
+
+    [Test]
+    public void ReverseShouldReturnAnArrayOfReversedElements()
+    {
+        _array.Insert(20);
+        _array.Insert(21);
+        _array.Insert(22);
+        _array.Insert(23);
+        _array.Insert(24);
+        _array.Insert(25);
+
+        var result = _array.Reverse();
+        
+        Assert.Multiple(() =>
+        {
+            Assert.That(result.Count(), Is.EqualTo(6));
+            Assert.That(result.IndexOf(25), Is.EqualTo(0));
+            Assert.That(result.IndexOf(24), Is.EqualTo(1));
+            Assert.That(result.IndexOf(23), Is.EqualTo(2));
+            Assert.That(result.IndexOf(22), Is.EqualTo(3));
+            Assert.That(result.IndexOf(21), Is.EqualTo(4));
+            Assert.That(result.IndexOf(20), Is.EqualTo(5));
+        });
+    }
 }
