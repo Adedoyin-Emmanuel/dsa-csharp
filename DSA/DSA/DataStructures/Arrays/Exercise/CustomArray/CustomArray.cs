@@ -100,6 +100,7 @@ public class CustomArray
             _items[i] = _items[i + 1];
         }
 
+        _items[_size - 1] = default;
         _size--;
     }
 
@@ -115,9 +116,9 @@ public class CustomArray
      */
     public void Print()
     {
-        foreach (int item in _items)
+        for (int i = 0; i < _size; i++)
         {
-            Console.WriteLine(item);
+            Console.WriteLine(_items[i]);
         }
     }
 }

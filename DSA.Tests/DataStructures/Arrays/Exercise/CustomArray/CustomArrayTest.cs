@@ -12,7 +12,7 @@ public class CustomArrayTest
 
 
     [Test]
-    public void CountShouldReturnCorrectValueAferAddingElements()
+    public void CountShouldReturnCorrectValueAfterAddingElements()
     {
         
         _array.Insert(1);
@@ -22,4 +22,7 @@ public class CustomArrayTest
         Assert.That(_array.Count(), Is.EqualTo(3));
     }
     
+    
+    // [Test]
+    // public void 
 }
