@@ -125,4 +125,26 @@ public class CustomArrayTest
             Assert.That(result.IndexOf(20), Is.EqualTo(5));
         });
     }
+
+    [Test]
+    public void InsertAtShouldChangeItemsPositions()
+    {
+        _array.Insert(30);
+        _array.Insert(40);
+        _array.Insert(50);
+        
+        _array.Insert(60);
+        _array.InsertAt(20, 0);
+        _array.InsertAt(10, 0);
+        
+        Assert.Multiple(() =>
+        {
+            Assert.That(_array.IndexOf(10), Is.EqualTo(0));
+            Assert.That(_array.IndexOf(20), Is.EqualTo(1));
+            Assert.That(_array.IndexOf(30), Is.EqualTo(2));
+            Assert.That(_array.IndexOf(40), Is.EqualTo(3));
+            Assert.That(_array.IndexOf(50), Is.EqualTo(4));
+            Assert.That(_array.IndexOf(60), Is.EqualTo(5));
+        });
+    }
 }

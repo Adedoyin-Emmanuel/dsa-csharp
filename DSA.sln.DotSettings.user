@@ -3,5 +3,6 @@
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::36938530-AE1C-4962-BBE0-4BF7B5B4D5D7::net8.0::DSA.Tests.DataStructures.Arrays.Exercise.CustomArray.CustomArrayTest.IntersectShouldReturnCommonItemsInTheArray&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::36938530-AE1C-4962-BBE0-4BF7B5B4D5D7::net8.0::DSA.Tests.DataStructures.Arrays.Exercise.CustomArray.CustomArrayTest.ReverseShouldReturnAnArrayOfReversedElements&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::36938530-AE1C-4962-BBE0-4BF7B5B4D5D7::net8.0::DSA.Tests.DataStructures.Arrays.Exercise.CustomArray.CustomArrayTest.InsertAtShouldChangeItemsPositions&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
