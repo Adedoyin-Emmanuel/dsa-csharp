@@ -1,4 +1,6 @@
 
+using NUnit.Framework.Internal;
+
 namespace DSA.Tests.DataStructures.Arrays.Exercise.CustomArray;
 
 public class CustomArrayTest
@@ -45,5 +47,20 @@ public class CustomArrayTest
         
         
         Assert.That(_array.Count(), Is.EqualTo(3));
+    }
+
+    [Test]
+    public void RemoveAtShouldRemoveElement()
+    {
+        _array.Insert(5);
+        _array.Insert(4);
+        _array.Insert(10);
+        
+        _array.RemoveAt(1);
+        
+        /*
+         * Array count should be 2 after removing element at index 1
+         */
+        Assert.That(_array.Count(), Is.EqualTo(2));
     }
 }
