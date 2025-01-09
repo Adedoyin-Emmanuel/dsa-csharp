@@ -1,9 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8b61d0f9_002D7ee6_002D4104_002Dacd2_002D2578afc7b78c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CountShouldReturnCorrectValueAferAddingElements" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c17c9300_002Dafe9_002D4c60_002D971e_002D2a8809a61f9f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IntersectShouldReturnCommonItemsInTheArray" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::36938530-AE1C-4962-BBE0-4BF7B5B4D5D7::net8.0::DSA.Tests.DataStructures.Arrays.Exercise.CustomArray.CustomArrayTest.CountShouldReturnCorrectValueAferAddingElements&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::36938530-AE1C-4962-BBE0-4BF7B5B4D5D7::net8.0::DSA.Tests.DataStructures.Arrays.Exercise.CustomArray.CustomArrayTest.IntersectShouldReturnCommonItemsInTheArray&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ad30ae32_002Ddeb9_002D4bbd_002D8560_002D358099265aed/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CountShouldReturnCorrectValueAferAddingElements #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

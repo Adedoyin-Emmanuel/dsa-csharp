@@ -44,7 +44,7 @@ public class CustomArray
          * Check if size of the array is more than the capacity
          */
 
-        if (_size > _capacity)
+        if (_size >= _capacity)
         {
             _capacity *= 2;
 

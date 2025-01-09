@@ -75,4 +75,29 @@ public class CustomArrayTest
         
         Assert.That(_array.Max(), Is.EqualTo(100));
     }
+
+
+    [Test]
+    public void IntersectShouldReturnCommonItemsInTheArray()
+    {
+        var inputArray = new int[5]{2014, 2015, 2025, 2028, 2030};
+        
+        _array.Insert(2025);
+        _array.Insert(2026);
+        _array.Insert(2027);
+        _array.Insert(2028);
+        _array.Insert(2029);
+        _array.Insert(2030);
+
+
+        var result = _array.Intersect(inputArray);
+        
+        Assert.Multiple(() =>
+        {
+            Assert.That(result.Count(), Is.EqualTo(3));
+            Assert.That(result.IndexOf(2025), Is.EqualTo(0));
+            Assert.That(result.IndexOf(2028), Is.EqualTo(1));
+            Assert.That(result.IndexOf(2030), Is.EqualTo(2));
+        });
+    }
 }
