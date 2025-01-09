@@ -104,6 +104,21 @@ public class CustomArray
         _size--;
     }
 
+    public int Max()
+    {
+        int highestNumber = 0;
+
+        for (int i = 0; i < _size; i++)
+        {
+            if (_items[i] > highestNumber)
+            {
+                highestNumber = _items[i];
+            }
+        }
+        
+        return highestNumber;
+    }
+
 
     public int Count()
     {
