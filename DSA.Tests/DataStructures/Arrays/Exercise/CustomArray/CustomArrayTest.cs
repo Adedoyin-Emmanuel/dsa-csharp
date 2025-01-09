@@ -34,4 +34,16 @@ public class CustomArrayTest
         
         Assert.That(_array.IndexOf(validElement), Is.EqualTo(2));
     }
+
+
+    [Test]
+    public void CountShouldReturnArraySize()
+    {
+        _array.Insert(2);
+        _array.Insert(4);
+        _array.Insert(10);
+        
+        
+        Assert.That(_array.Count(), Is.EqualTo(3));
+    }
 }
