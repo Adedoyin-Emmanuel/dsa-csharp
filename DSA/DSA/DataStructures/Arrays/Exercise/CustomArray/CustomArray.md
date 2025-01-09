@@ -23,4 +23,11 @@ number. What is the runtime complexity of this method?
 4. Extend the Array class and add a new method to insert an item at a
    given index:
 
+### Solution
 
+1. Runtime Complexity of `Array.Max()` is `O(n)`. This is because we have to
+   compare each value of the array to a `temporary` max variable. In the best-case scenario,
+   the highest number is the first element in the array. In the worst-case scenario, the highest
+   number is the last element in the array. Irrespective of the both scenarios, the loop compares each value in the array.
+   Therefore the Runtime complexity is `O(n)`. Note that this is for an unsorted array. The space complexity is `O(1)` This is 
+   because the memory allocated for the highest number is constant irrespective of the size of the array. 
