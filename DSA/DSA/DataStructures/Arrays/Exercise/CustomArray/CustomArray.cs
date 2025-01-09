@@ -138,6 +138,19 @@ public class CustomArray
     }
 
 
+    public CustomArray Reverse()
+    {
+        var reversedArray = new CustomArray();
+
+        for (int i = _size - 1; i <= 0; i--)
+        {
+            reversedArray.Insert(_items[i]);
+        }
+
+        return reversedArray;
+    }
+
+
     public int Count()
     {
         return _size;
