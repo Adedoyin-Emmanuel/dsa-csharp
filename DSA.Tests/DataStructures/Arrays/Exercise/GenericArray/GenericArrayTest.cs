@@ -23,4 +23,31 @@ public class GenericArrayTest
         
         Assert.That(_numbers.Count(), Is.EqualTo(4));
     }
+
+
+    [Test]
+    public void IndexOfShouldReturnCorrectIndex()
+    {
+        _numbers.Insert(5);
+        _numbers.Insert(6);
+        _numbers.Insert(10);
+        
+        Assert.That(_numbers.IndexOf(10), Is.EqualTo(2));
+    }
+
+    [Test]
+    public void RemoveAtShouldRemoveArrayElement()
+    {
+        _numbers.Insert(20);
+        _numbers.Insert(50);
+        _numbers.Insert(60);
+        
+        _numbers.RemoveAt(1);
+        
+        /*
+         * Numbers array should be 2 after removing an element
+         */
+        
+        Assert.That(_numbers.Count(), Is.EqualTo(2));
+    }
 }
