@@ -21,8 +21,17 @@ public class CustomArrayTest
 
         Assert.That(_array.Count(), Is.EqualTo(3));
     }
-    
-    
-    // [Test]
-    // public void 
+
+
+    [Test]
+    public void IndexOfShouldReturnCorrectValue()
+    {
+        _array.Insert(23);
+        _array.Insert(24);
+        _array.Insert(25);
+        
+        int validElement = 25;
+        
+        Assert.That(_array.IndexOf(validElement), Is.EqualTo(2));
+    }
 }
